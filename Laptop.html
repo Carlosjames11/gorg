@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    
+</head>
+<body>
+    <style>
+     .header{
+     background: linear-gradient(rgb(167, 143, 71),white);
+     }
+
+    </style>
+ <div class="header" style="padding:50px ;">
+ <h1>SHOPPING MARKET</h1>
+ <p>SHOPPING ALL YOU CAN!</p>
+
+ </div>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="Mens.html">Men</a></li>
+            <li><a class="dropdown-item" href="Womens.html">Women</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Kids.html">Kids</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Gadgets
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
+            <li><a class="dropdown-item" href="Mobile.html">Mobile</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="About.html" tabindex="-1" aria-disabled="true">About Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="Home.html" role="button">
+              <i class="fas fa-shopping-cart" style="margin-top: 12px;margin-left:100px; color:black"></i></a>
+      </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container">
+
+     <!-- -----FIRST SECTION--- -->
+ <div class="container" style="padding-top:40px ;">
+  <div class="row text-center">
+    <div class="col-sm-4">
+     <img src="img/Laptop/11th Gen Intel processor LG.jpg">
+     <H1>11th Gen Intel processor LG</H1>
+     <P>PRICE:40,000 php</P>
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+  </div>
+
+    <div class="col-sm-4">
+      <img src="img/Laptop/Acer Predator Helios 300 PH315-54-760S Gaming Laptop  Intel i7-11800.jpg">
+      <H1>Acer Predator Helios 300 PH315-54-760S Gaming Laptop</H1>
+      <P>PRICE: 95,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+     <div class="col-sm-4">
+      <img src="img/Laptop/AMD RYZEN LAPTOP.jpg">
+      <H1>AMD RYZEN LAPTOP</H1>
+      <P>PRICE: 60,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+  </div>
+</div>
+
+     <!-- -----SECOND SECTION--- -->
+<div class="container" style="padding-top:40px ;">
+  <div class="row text-center">
+    <div class="col-sm-4">
+     <img src="img/Laptop/ASUS TUF Gaming Laptop - 15.6 Full HD - AMD Ryzen 5 3550H - RX 560X - 8 GB DDR4 - 256 GB PCIe SSD.jpg">
+     <H1>ASUS TUF Gaming Laptop</H1>
+     <P>PRICE:80,000 php</P>
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+  </div>
+
+    <div class="col-sm-4">
+      <img src="img/Laptop/Dell Inspiron 15 3000.jpg" style="padding-top:40px;">
+      <H1>Dell Inspiron 15 3000</H1>
+      <P>PRICE:45,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+     <div class="col-sm-4">
+      <img src="img/Laptop/Dell Inspiron 7000 7370 Laptop.jpg" >
+      <H1>Dell Inspiron 7000 7370 Laptop</H1>
+      <P>PRICE:35,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+  </div>
+</div>
+
+<!-- -----THIRD SECTION--- -->
+<div class="container" style="padding-top:40px ;">
+  <div class="row text-center">
+    <div class="col-sm-4">
+     <img src="img/Laptop/Dell Latitude 3420 Laptop.jpg">
+     <H1>Dell Latitude 3420 Laptop</H1>
+     <P>PRICE:60,000 php</P>
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+  </div>
+
+    <div class="col-sm-4">
+      <img src="img/Laptop/enovo IdeaPad 3 Intel Core i5-1135G7 12GB 256GB SSD 15.6 FHD Touchscreen Laptop.jpg" >
+      <H1>Lenovo IdeaPad 3 Intel Core i5-1135G7</H1>
+      <P>PRICE:85,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+     <div class="col-sm-4">
+      <img src="img/Laptop/HP 15-dy2093dx Intel Core i5-1135G7 8GB 256GB SSD 15.6-inch Full HD IPS Display Win 10 Laptop.jpg">
+      <H1>HP 15-dy2093dx Intel Core i5-1135G7</H1>
+      <P>PRICE:40,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+  </div>
+</div>
+
+<!-- -----4th SECTION--- -->
+<div class="container" style="padding-top:40px ;">
+  <div class="row text-center">
+    <div class="col-sm-4">
+     <img src="img/Laptop/ideapad slim 7i pro 14.jpg" style="padding-top:40px;"> 
+     <H1>deapad slim 7i pro 14</H1>
+     <P>PRICE:73,000 php</P>
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+  </div>
+
+    <div class="col-sm-4">
+      <img src="img/Laptop/Infinix INBook X1 Pro.jpg" >
+      <H1>Infinix INBook X1 Pro</H1>
+      <P>PRICE:78,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+     <div class="col-sm-4">
+      <img src="img/Laptop/Infinix INBook X1 XL12 Laptop.jpg">
+      <H1>Infinix INBook X1 XL12 Laptop</H1>
+      <P>PRICE:80,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+  </div>
+</div>
+
+<!-- -----5th SECTION--- -->
+<div class="container" style="padding-top:40px ;">
+  <div class="row text-center">
+    <div class="col-sm-4">
+     <img src="img/Laptop/LG ED530-G Laptop (Core i3 2nd Gen 2 GB 500 GB DOS).jpg" style="padding-top:40px;"> 
+     <H1>LG ED530-G Laptop</H1>
+     <P>PRICE:45,000 php</P>
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+  </div>
+
+    <div class="col-sm-4">
+      <img src="img/Laptop/LG latops Gram, Gaming & 2 in 1 Laptops.jpg">
+      <H1>LG latops Gram, Gaming & 2 in 1 Laptops</H1>
+      <P>PRICE:55,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+     <div class="col-sm-4">
+      <img src="img/Laptop/MacBook Pro 13 Mid 2012 Non Retina.jpg">
+      <H1>MacBook Pro 13 Mid 2012 Non Retina/H1>
+      <P>PRICE:70,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+  </div>
+</div>
+
+<!-- -----6th SECTION--- -->
+<div class="container" style="padding-top:40px ;">
+  <div class="row text-center">
+    <div class="col-sm-4">
+     <img src="img/Laptop/Predator Helios 300 Gaming Laptop, 15.6 Full HD IPS, Intel i7 CPU, 16GB DDR4 RAM, 256GB SSD, GeForce GTX 1060 6GB, VR Ready, Red Backlit KB, Metal Chassis, Windows 10 64 bit.jpg"> 
+     <H1>Predator Helios 300 Gaming Laptop</H1>
+     <P>PRICE:95,000 php</P>
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+  </div>
+
+    <div class="col-sm-4">
+      <img src="img/Laptop/Refurbished 12-inch MacBook 1.4GHz dual-core Intel Core i7 – Gold.jpg" >
+      <H1>Refurbished 12-inch MacBook</H1>
+      <P>PRICE:75,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+     <div class="col-sm-4">
+      <img src="img/Laptop/Samsung Notebook 9 Pen and Samsung Notebook 9 Pro,.jpg">
+      <H1>Samsung Notebook 9 Pen and Samsung Notebook 9 Pro</H1>
+      <P>PRICE:57,000 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+  </div>
+</div>
+
+<!-- -----7th SECTION--- -->
+<div class="container" style="padding-top:40px ;">
+  <div class="row text-center">
+    <div class="col-sm-4">
+     <img src="img/Laptop/ThinkPad E14 Gen 4 (14 AMD).jpg"> 
+     <H1>ThinkPad E14 Gen 4</H1>
+     <P>PRICE:46,000 php</P>
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+  </div>
+
+    <div class="col-sm-4">
+      <img src="img/Laptop/Toshiba Satellite Laptop - C50-A I0110t.jpg" >
+      <H1>Toshiba Satellite Laptop</H1>
+      <P>PRICE:42,200 php</P>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkModal">Buy</button>
+     </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<!-- ----------------------------MODAL FORM ADD TO CART------------------------ -->
+<div class="modal fade" id="exampleModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color:rgb(119, 168, 201);">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel" style="font-size:20px ; color:rgb(7, 6, 6)">Online Shopping</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="font-size:30px;">
+      Add this product to cart?
+      <div class="modal-body">
+        <label for="">QUANTITY</label>
+        <input type="number" name="" id="" class="form-control">
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline-danger" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Proceed</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color:rgb(119, 168, 201);">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" >
+      Added to cart..
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- -------BUY MODAL FORM------------- -->
+<div class="modal fade" id="checkModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color:rgb(119, 168, 201);">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2">FILL OUT YOUR INFORMATION</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Address:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Estimated Delivered:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline-danger" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal"onclick="sweetAlert()">Order</button>
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+  .swal-overlay {
+  background-color: rgba(211, 224, 154, 0.45);
+  }
+  .swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #4962B3;
+  font-size: 12px;
+  border: 1px solid #3e549a;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  }
+  </style>
+  
+  <script>
+  function sweetAlert(){
+      swal("DONE!", "", "success");
+      $('#checkModal').modal('hide')
+      setTimeout("location.href = 'Home.html';", 1500);
+  }
+  
+  
+  </script>
